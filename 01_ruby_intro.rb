@@ -5,10 +5,20 @@
 # First Challenge is to take my string and convert every "s" character to a "th" and output that to the console.
 
 # For example,
-# my_string = "I was stranded in the Mississippi River"
+my_string = "I was stranded in the Mississippi River"
+
+my_string = my_string.gsub("s", "th")
+
+puts my_string
 
 # Would output "I wath thtranded in the Miththiththippi River"
 
 
 # Once you are able to output the correct output when running your code, try finding a way to get input from a user when they run your code. 
 # Then convert that input to a new "th" replaced string
+
+my_string = gets.chomp
+
+my_string = my_string.gsub("s", "th")
+
+puts my_string

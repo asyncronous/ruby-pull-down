@@ -7,7 +7,7 @@
 #
 # Check your solution by filling in the folowing table:
 # number_1 || number_2 || expected || actual
-#  
+# 
 # Beast Mode:
 # If you complete the challenge, feel free to come up
 # with your own examples and test corner cases.
@@ -17,7 +17,23 @@
 # Post your solutions in chat for feedback
 
 def largest_number (number_1, number_2)
-  # Your code here
+  if !number_1.kind_of?(Integer) || !number_2.kind_of?(Integer)
+    return "Not comparing Integers!"
+  else
+    if number_1 > number_2
+
+      return number_1
+  
+    elsif number_1 < number_2
+  
+      return number_2
+  
+    elsif number_1 == number_2
+  
+      return "The numbers are equal"
+    
+    end
+  end
 end
 
-largest_number(100,50)
+puts largest_number(300,50)
